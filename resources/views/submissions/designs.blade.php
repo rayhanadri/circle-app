@@ -1,4 +1,4 @@
-@include('..\body_header')
+@include('body_header')
 
 <div class="container-fluid">
     <div class="row">
