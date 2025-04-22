@@ -208,10 +208,10 @@
                                         @if ($manager_id === $user->id)
                                             {{-- <a href="{{ route('projects', $project->id) }}"
                                                 class="btn btn-warning btn-sm">Edit</a> --}}
-                                            <form action="{{ route('projects', $project->id) }}" method="POST"
-                                                style="display:inline;">
+                                            <form action="{{ route('projects.close', ['id' => $project->id]) }}"
+                                                method="POST" style="display:inline;">
                                                 @csrf
-                                                @method('DELETE')
+                                                @method('PUT')
                                                 <button type="submit" class="btn btn-danger btn-sm"
                                                     onclick="return confirm('Are you sure?')">Close</button>
                                             </form>

@@ -128,6 +128,24 @@ class ProjectController extends Controller
         return redirect()->back()->with('success', 'Project updated successfully.');
     }
 
+    public function closeProject(Request $request)
+    {
+        // Validate the request data
+        $id = $request->input('id');
+
+        // Find the project by ID
+        $project = Project::find($id);
+
+        // Update the project details
+        if ($project) {
+            $project->status = "Closed";
+            $project->save();
+        }
+
+        // Redirect back to the projects page with a success message
+        return redirect()->back()->with('success', 'Project closed successfully.');
+    }
+
     public function projectDetail(Request $request)
     {
         // Get the currently authenticated user

@@ -28,6 +28,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects')->middleware('auth');
 Route::post('/projects', [ProjectController::class, 'storeProject'])->name('projects.store')->middleware('auth');
 Route::put('/projects', [ProjectController::class, 'updateProject'])->name('projects.update')->middleware('auth');
+Route::put('/projects_close', [ProjectController::class, 'closeProject'])->name('projects.close')->middleware('auth');
 
 Route::get('/projects_detail', [ProjectController::class, 'projectDetail'])->name('projects.detail')->middleware('auth');
 Route::get('/projects_artwork', [ProjectController::class, 'projectArtwork'])->name('projects.artwork')->middleware('auth');

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modernize Free</title>
+    <title>Erudesu Register</title>
     <link rel="shortcut icon" type="image/png" href="resources/images/logos/favicon.png" />
     <link rel="stylesheet" href="resources/css/styles.min.css" />
 </head>
@@ -20,8 +20,9 @@
                     <div class="col-md-8 col-lg-6 col-xxl-3">
                         <div class="card mb-0">
                             <div class="card-body">
-                                <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <img src="resources/images/logos/dark-logo.svg" width="180" alt="">
+                                <a href="{{ url('/') }}"
+                                    class="text-nowrap logo-img text-center d-block py-3 w-100">
+                                    <img src="resources/images/logos/erudesu_logo.png" width="180" alt="">
                                 </a>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <p class="fs-4 mb-0 fw-bold">Already have an Account?</p>
