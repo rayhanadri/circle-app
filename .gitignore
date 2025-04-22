@@ -21,3 +21,6 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+/resources/images/artworks
+/resources/images/designs
+/resources/images/projects
