@@ -62,8 +62,7 @@ class User extends Authenticatable
     {
         // return $this->hasMany(User_Project::class, 'id_user');
         return $this->belongsToMany(Project::class, 'user_projects', 'id_user', 'id_project')
-                ->latest()
-                ->take(3);
+                ->latest();
     }
 
     public function submissions()
