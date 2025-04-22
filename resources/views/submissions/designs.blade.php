@@ -384,7 +384,7 @@
     document.title = "Dashboard";
 </script>
 
-@include('..\body_footer')
+@include('body_footer')
 <link href="https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.css" rel="stylesheet"
     integrity="sha384-2vMryTPZxTZDZ3GnMBDVQV8OtmoutdrfJxnDTg0bVam9mZhi7Zr3J1+lkVFRr71f" crossorigin="anonymous">
 <script src="https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.js"
