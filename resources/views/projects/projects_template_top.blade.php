@@ -1,4 +1,4 @@
-@include('...\body_header')
+@include('body_header')
 <script>
     document.getElementById("sidebarProjects").classList.add("active");
 </script>
