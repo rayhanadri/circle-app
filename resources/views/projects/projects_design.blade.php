@@ -253,18 +253,11 @@
                                                         value="{{ $submission->description }}" required>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="project{{ $submission->id }}"
-                                                        class="form-label">Project</label>
-                                                    <select class="form-control myselect2"
-                                                        id="project{{ $submission->id }}" name="project" required
-                                                        style="width: 100%;">
-                                                        @foreach ($submission->user->projects as $project)
-                                                            <option value="{{ $project->id }}"
-                                                                {{ $project->id == $submission->project_id ? ' selected' : '' }}>
-                                                                {{ $project->name }}
-                                                            </option>
-                                                        @endforeach
-                                                    </select>
+                                                    <label for="project{{ $project->id }}"
+                                                        class="form-label">Project: {{ $project->name }} </label>
+                                                    <input type="hidden" class="form-control"
+                                                        id="project{{ $project->id }}" name="project"
+                                                        value="{{ $project->id }}" required>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="status{{ $submission->id }}"
